@@ -4,11 +4,17 @@ namespace FreeApp
 {
     class Program
     {
-        private const char Value = '!';
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!".EndsWith(Value));
+            Console.Write("Hi, what's your name? ");
+            string name = Console.ReadLine();
+
+            Console.Write($"How old are you, {name}? ");
+            var age = Console.ReadLine();
+
+
+            Console.WriteLine($"Welcome {name}, You are {age} years old. ");
         }
     }
 }
