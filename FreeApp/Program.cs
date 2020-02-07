@@ -7,22 +7,27 @@ namespace FreeApp
 
         static void Main(string[] args)
         {
-            double number1,
-                   number2,
-                   sum;
+            string color,
+                   pluralNoun,
+                   celebrity;
 
 
-            Console.Write("Basic Calculator\n");
+            Console.Write("MadLib\n");
 
-            Console.Write("Enter a number. ");
-            number1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a color. ");
+            color = Console.ReadLine();
 
-            Console.Write("Enter another number. ");
-            number2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a plural noun. ");
+            pluralNoun = Console.ReadLine();
 
-            sum = number1 + number2;
+            Console.Write("Enter a celebrity name. ");
+            celebrity = Console.ReadLine();
 
-            Console.WriteLine($"The answer { sum }, Cheers!. ");
+
+
+            Console.WriteLine($"Roses are { color }. ");
+            Console.WriteLine($"{ pluralNoun } are ubiquitous. ");
+            Console.WriteLine($"I love { celebrity }. ");
         }
     }
 }
